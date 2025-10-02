@@ -20,3 +20,7 @@ public class Atividade02 {
         sc.close();
     }
 }
+--- Conversão de Temperatura ---
+Temperatura em Celsius: 25.00 °C
+Temperatura em Fahrenheit: 77.00 °F
+Temperatura em Kelvin: 298.15 K
