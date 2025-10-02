@@ -19,4 +19,26 @@ public class Atividade02 {
 
         sc.close();
     }
+}import java.util.Scanner;
+
+public class Atividade02 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Entrada
+        System.out.print("Digite a temperatura em Celsius: ");
+        double celsius = sc.nextDouble();
+
+        // Conversões
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        double kelvin = celsius + 273.15;
+
+        // Saída formatada
+        System.out.println("\nTemperatura em Celsius: " + celsius + " ºC");
+        System.out.println("Temperatura em Fahrenheit: " + fahrenheit + " ºF");
+        System.out.println("Temperatura em Kelvin: " + kelvin + " K");
+
+        sc.close(); // Fecha o scanner
+    } // <-- Esta chave estava faltando
 }
+
