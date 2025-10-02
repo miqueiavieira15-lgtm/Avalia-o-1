@@ -1,22 +1,32 @@
+
+    }
+}
 import java.util.Scanner;
 
-public class Atividade02 {
+public class ConversaoTemperatura {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        // Criar scanner para entrada do usuário
+        Scanner scanner = new Scanner(System.in);
 
-        // Entrada
-        System.out.print("Digite a temperatura em Celsius: ");
-        double celsius = sc.nextDouble();
+        // Solicitar entrada da temperatura em Celsius
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        double celsius = scanner.nextDouble();
 
-        // Conversões
+        // Calcular Fahrenheit e Kelvin
         double fahrenheit = (celsius * 9 / 5) + 32;
         double kelvin = celsius + 273.15;
 
-        // Saída formatada
-        System.out.println("\nTemperatura em Celsius: " + celsius + " ºC");
-        System.out.println("Temperatura em Fahrenheit: " + fahrenheit + " ºF");
-        System.out.println("Temperatura em Kelvin: " + kelvin + " K");
+        // Exibir os resultados
+        System.out.println("\n--- Conversão de Temperatura ---");
+        System.out.printf("Temperatura em Celsius: %.2f °C%n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
 
-        sc.close();
+        // Fechar o scanner
+        scanner.close();
     }
 }
+--- Conversão de Temperatura ---
+Temperatura em Celsius: 25.00 °C
+Temperatura em Fahrenheit: 77.00 °F
+Temperatura em Kelvin: 298.15 K
